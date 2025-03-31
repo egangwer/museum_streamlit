@@ -91,8 +91,7 @@ def home_page():
     if st.button("Refresh Artworks"):
         st.rerun()
 
-    st.write("Data is from the Cleveland Art Museum, Museum of Modern Art in New York, Art Institute of Chicago, and the National Gallery of Art artwork collections.")
-    st.write("The data was accessed through API's and web scraping.")
+    st.write("Data is from the Cleveland Art Museum, Museum of Modern Art in New York, Art Institute of Chicago, and the National Gallery of Art artwork collections. Data was accessed through API's and web scraping.")
     st.write('The bertopic model was trained on artwork description data and then futher clustered using KMeans.')
 
 
