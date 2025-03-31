@@ -13,7 +13,7 @@ from importlib import import_module
 
 
 st.set_page_config(layout="wide")
-page = st.sidebar.radio('Select a page', ['Home', 'Data Stats'])
+page = st.sidebar.radio('Select a page', ['Recommendations', 'Museum Data'])
 
 
 museum_dat = load("data/FINAL_museum_dat_with_extra.joblib")
@@ -96,9 +96,9 @@ def home_page():
     st.write('The bertopic model was trained on artwork description data and then futher clustered using KMeans.')
 
 
-if page == 'Home':
+if page == 'Recommendations':
     home_page()
 
-elif page == 'Data Stats':
+elif page == 'Museum Data':
     import page2  
     page2.show()

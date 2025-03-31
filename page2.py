@@ -11,6 +11,8 @@ import seaborn as sns
 import time
 from importlib import import_module
 
+
+
 def show(): 
     museum_dat = load("data/FINAL_museum_dat_with_extra.joblib")
     kmeans_model = load("data/FINAL_kmeans.joblib")
