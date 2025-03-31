@@ -22,10 +22,10 @@ def show():
     steps = 50
     delay = 0.05  # Speed of animation
     stats = {
-        "Total Artworks": (23586, "#00C0C1", 50),
-        "Museums Featured": (4, "#008F94", 50),
-        "Total Artists": (5570, "#008F94", 50),
-        "Mediums": (300, "#008F94", 50) 
+        "Total Artworks": (23586, "#DAE050", 50),
+        "Museums Featured": (4, "#1E4DD9", 50),
+        "Total Artists": (5570, "#1E4DD9", 50),
+        "Mediums": (300, "#1E4DD9", 50) 
     }
     cols = st.columns(len(stats))
     placeholders = {key: col.empty() for key, col in zip(stats.keys(), cols)}
@@ -78,17 +78,17 @@ def show():
 
     fig = px.bar(museum_counts, x="Artwork Count", y="Museum",text="Formatted Count", orientation="h")
 
-    fig.update_traces(marker_color= "#008F94", textposition="inside",
+    fig.update_traces(marker_color= "#1E4DD9", textposition="inside",
                     textfont=dict(size=10, family="Arial Black", color="white"))
     fig.update_layout(yaxis={"categoryorder": "total ascending"})
     st.plotly_chart(fig)
 
     # Artwork Accession Year by museum 
     museum_colors = {
-        "Metropolitan Museum of Art": "#008F94",
-        "Art Institute of Chicago": "#00C0C1",
-        "Cleveland Museum of Art": "#00709E",
-        "National Gallery of Art": "#013753"
+        "Metropolitan Museum of Art": "#1E4DD9",
+        "Art Institute of Chicago": "#555FDB",
+        "Cleveland Museum of Art": "#D1DB68",
+        "National Gallery of Art": "#3E5084"
     }
     st.subheader("Artwork Accession Year by Museum")
 
