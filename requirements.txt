@@ -1,0 +1,11 @@
+streamlit
+pandas
+random
+nltk
+joblib
+plotly.graph_objects
+numpy
+plotly.express
+matplotlib.pyplot
+seaborn 
+time
