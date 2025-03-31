@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import time
 from importlib import import_module
-
+import page2 # Import the page2 module
 
 st.set_page_config(layout="wide")
 
