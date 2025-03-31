@@ -2,9 +2,8 @@ streamlit
 pandas
 nltk
 joblib
-plotly.graph_objects
+plotly
 numpy
-plotly.express
-matplotlib.pyplot
+matplotlib
 seaborn 
-time
+
