@@ -14,6 +14,15 @@ from importlib import import_module
 
 st.set_page_config(layout="wide")
 page = st.sidebar.radio('Select a page', ['Recommendations', 'Museum Data'])
+st.markdown("""
+    <style>
+    @import url('"https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"');
+    
+    html, body, [class*="st-"] {
+        font-family: 'Bebas Neue', sans-serif;
+    }
+    </style>
+""", unsafe_allow_html=True)
 
 
 museum_dat = load("data/FINAL_museum_dat_with_extra.joblib")
