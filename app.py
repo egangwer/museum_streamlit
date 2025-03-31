@@ -26,10 +26,10 @@ def home_page():
         artwork = df[df['Title'].str.lower() == title.lower()]
         if artwork.empty:
             return "Artwork not found. Try again."
-    cluster_label = artwork['Cluster'].values[0] 
-    similar_artworks = df[df['Cluster'] == cluster_label] 
+        cluster_label = artwork['Cluster'].values[0] 
+        similar_artworks = df[df['Cluster'] == cluster_label] 
     # similar_artworks['Artist'] = similar_artworks['Artist'].str.title()
-    return similar_artworks[['Title', 'Artist', 'Date_Start', 'Date_End', 'Medium', 'Image_Link', 'Museum', 'Description']].sample(1)
+        return similar_artworks[['Title', 'Artist', 'Date_Start', 'Date_End', 'Medium', 'Image_Link', 'Museum', 'Description']].sample(1)
     
     def find_artist(artist, df):
         artist = df[df['Artist_Clean'].str.lower() == artist.lower()]
