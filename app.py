@@ -24,7 +24,7 @@ def home_page():
     def recommend_artworks(title, df, kmeans_model):
         artwork = df[df['Title'].str.lower() == title.lower()]
         if artwork.empty:
-            return "Artwork not found. Try again."
+            return "Artwork not found! Try again!"
         cluster_label = artwork['Cluster'].values[0] 
         similar_artworks = df[df['Cluster'] == cluster_label] 
     # similar_artworks['Artist'] = similar_artworks['Artist'].str.title()
@@ -55,11 +55,11 @@ def home_page():
                     else:
                         st.write("Image not available")
                     st.markdown(f" **{row['Title']}** by **{row['Artist']}** is made of {row['Medium']}. This artwork is currently in the **{row['Museum']} Museum Collection**.")
-                    st.caption(f"{row['Description']}")
+                #    st.caption(f"{row['Description']}")
                 else: 
                     st.warning("Image not found. Refresh for new picks!")
                     st.write(f"**{row['Title']}** by **{row['Artist']}** is made of {row['Medium']}. This artwork is currentlyin the **{row['Museum']} Museum Collection**.")
-                    st.caption(f"'{row['Description']}'")
+                #    st.caption(f"'{row['Description']}'")
     else: 
         user_input = st.text_input('Enter an artist here:')
         if st.button("Find artist"):
@@ -71,7 +71,7 @@ def home_page():
                 st.dataframe(results)
 
 
-    st.subheader("Looking for inspiration? Start with these random artworks!")
+    st.subheader("Looking for inspiration? Check out these artworks!")
     random_artworks = museum_dat.sample(4, random_state=random.randint(1, 23000))  
     cols = st.columns(4)
 
