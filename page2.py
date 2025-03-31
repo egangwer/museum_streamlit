@@ -86,9 +86,9 @@ def show():
     # Artwork Accession Year by museum 
     museum_colors = {
         "Metropolitan Museum of Art": "#1E4DD9",
-        "Art Institute of Chicago": "#555FDB",
+        "Art Institute of Chicago": "#A5B32E",
         "Cleveland Museum of Art": "#D1DB68",
-        "National Gallery of Art": "#3E5084"
+        "National Gallery of Art": "#000290"
     }
     st.subheader("Artwork Accession Year by Museum")
 
