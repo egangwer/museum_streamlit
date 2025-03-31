@@ -10,10 +10,10 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import time
 from importlib import import_module
-import page2 # Import the page2 module
+
 
 st.set_page_config(layout="wide")
-
+page = st.sidebar.radio('Select a page', ['Home', 'Data Stats'])
 
 
 museum_dat = load("data/FINAL_museum_dat_with_extra.joblib")
@@ -96,8 +96,9 @@ def home_page():
     st.write('The bertopic model was trained on artwork description data and then futher clustered using KMeans.')
 
 
-if st.sidebar.button("Recommendations"):
+if page == 'Home':
     home_page()
-if st.sidebar.button("Museum Data"):
-    import page2
+
+elif page == 'Data Stats':
+    import page2  
     page2.show()
