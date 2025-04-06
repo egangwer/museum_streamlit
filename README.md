@@ -1,6 +1,25 @@
-# museum_streamlit
-The goal of this project is to perform topic modeling on artwork descriptions from various museums and then by using KMeans clustering provide recommendations / similiar artworks based on the artwork description, medium, and year it was created. The museums that were scraped are the Metropolitan Museum of Art, Harvard Art Museum, Cleveland Art Museum, and the Art Institute of Chicago. API’s were used to grab more information about the artwork as well.
+# Unstructured Data Final Project
 
-This project aims to provide a recommendation system for art enthusiasts to find similar artworks across multiple museums.
+This project explores unstructured data through topic modeling and clustering techniques to build a recommendation system for artworks across multiple museums.
 
-Link to streamlit app: https://museumapp-qvjnqnzpexfhl7lcggunrq.streamlit.app 
+### Project Goal
+
+To recommend similar artworks based on shared characteristics such as description, medium, and year of creation, helping users discover new pieces across various museum collections.
+
+### Methods & Tools
+- Topic Modeling on artwork descriptions
+- KMeans Clustering for grouping similar artworks
+- APIs to enrich data with additional artwork details
+- Streamlit for building an interactive user interface
+
+
+### Museums Included
+- Metropolitan Museum of Art
+- Harvard Art Museum
+- Cleveland Museum of Art
+- Art Institute of Chicago
+- National Gallery of Art
+
+[Link to Streamlit App](https://museumapp-qvjnqnzpexfhl7lcggunrq.streamlit.app)
+
+Explore similar artworks and discover hidden gems across museum collections!
