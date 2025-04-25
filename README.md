@@ -1,5 +1,7 @@
 # Unstructured Data Final Project
 
+[Link to Streamlit App](https://museumapp-qvjnqnzpexfhl7lcggunrq.streamlit.app)
+
 This project explores the power of unstructured data through topic modeling and clustering techniques to build a recommendation system for artworks across multiple museums. By analyzing artwork data and descriptions, this streamlit app helps users discover similar pieces from different collections.
 ## Project Goal
 To recommend similar artworks based on shared features—such as description, medium, and year of creation to encourage exploration across diverse museum collections.
